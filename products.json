@@ -1,0 +1,68 @@
+{
+  "items": [
+    {
+      "sys": { "id": "1" },
+      "fields": {
+        "title": "không giới hạn",
+        "price": 150000,
+        "image": { "fields": { "file": { "url": "/images/Products/khonggioihan.png" } } }
+      }
+    },
+    {
+      "sys": { "id": "2" },
+      "fields": {
+        "title": "nhà giả kim",
+        "price": 110000,
+        "image": { "fields": { "file": { "url": "/images/Products/khonggioihan.png" } } }
+      }
+    },
+    {
+      "sys": { "id": "3" },
+      "fields": {
+        "title": "trở về không",
+        "price": 100000,
+        "image": { "fields": { "file": { "url": "/images/Products/khonggioihan.png" } } }
+      }
+    },
+    {
+      "sys": { "id": "4" },
+      "fields": {
+        "title": "tâm lý học tích cực",
+        "price": 50000,
+        "image": { "fields": { "file": { "url": "/images/Products/khonggioihan.png" } } }
+      }
+    },
+    {
+      "sys": { "id": "5" },
+      "fields": {
+        "title": "tâm lý học nói gì về truyền thông",
+        "price": 55099,
+        "image": { "fields": { "file": { "url": "/images/Products/khonggioihan.png" } } }
+      }
+    },
+    {
+      "sys": { "id": "6" },
+      "fields": {
+        "title": "không giới hạn",
+        "price": 32000,
+        "image": { "fields": { "file": { "url": "/images/Products/khonggioihan.png" } } }
+      }
+    },
+    {
+      "sys": { "id": "7" },
+      "fields": {
+        "title": "không giới hạn",
+        "price": 45000,
+        "image": { "fields": { "file": { "url": "/images/Products/khonggioihan.png" } } }
+      }
+    },
+    {
+      "sys": { "id": "8" },
+      "fields": {
+        "title": "không giới hạn  ",
+        "price": 33500,
+        "image": { "fields": { "file": { "url": "/images/Products/khonggioihan.png" } } }
+      }
+    }
+  ]
+}

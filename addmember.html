@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ADMIN</title>
+    <link rel="stylesheet" type="text/css" href="../css/style.css">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" integrity="sha384-JcKb8q3iqJ61gNV9KGb8thSsNjpSL0n8PARn9HuZOnIxN0hoP+VmmDGMN5t9UJ0Z" crossorigin="anonymous">
+	<script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" ></script>
+	<script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js" ></script>
+	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css">
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.4.0/css/font-awesome.min.css" rel="stylesheet" type="text/css"> 
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/js/bootstrap.min.js"></script>
+
+</head>
+<body>
+    <div class="container">
+		<!-- Header -->
+		<div class="header">
+			<nav class="navbar navbar-expand-md navbar-light bg-light sticky-top">
+				<div class="container-fluid p-4">
+					<a class="navbar-branch" href="#">
+						<h1>BOOKS</h1>
+					</a>
+					<button class="navbar-toggler" type="button" data-toggle="collapse" 
+					data-target="#navbarResponsive">
+						<span class="navbar-toggler-icon"></span>
+					</button>
+					<div class="collapse navbar-collapse" id="navbarResponsive">
+						<ul class="navbar-nav ml-auto">
+							<li class="nav-item">
+								<a class="nav-link active" href="admin.html">ADMIN</a>
+							</li>
+							<li class="nav-item">
+								<a class="nav-link" href="">PRODUCT</a>
+							</li>
+							<li class="nav-item">
+								<a class="nav-link" href="member.html">MEMBER</a>
+							</li>
+							<li class="nav-item">
+								<a class="nav-link" href="">ODER</a>
+							</li>
+						</ul>
+					</div>
+				</div>
+			</nav>
+		</div>
+
+        <div class="member_add">
+            <form action="" method="post">
+                <table>
+                    <tr>
+                        <td colspan="2" align="center">
+                            <h3>ADD MEMBER</h3>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td nowrap="nowrap" ><h4>Full name</h4></td>
+                        <td><input type="text" name="fullname" id="fullname" value="" ></td>
+                    </tr>
+                    <tr>
+                        <td nowrap="nowrap"><h4>Password</h4></td>
+                        <td><input type="password" name="password" id="password" value="" ></td>
+                    </tr>
+                    <tr>
+                        <td nowrap="nowrap"><h4>Email</h4></td>
+                        <td><input type="text" id="email" name="email" value=""></td>
+                    </tr>
+                    <tr>
+                        <td nowrap="nowrap"><h4>Permission</h4></td>
+                        <td>
+                            <select id="permision" name="permision">
+                                <option value="0">Thành viên</option>
+                                <option value="1">Admin</option>
+                            </select>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td colspan="2" align="center"><input type="submit" name="btn_submit" value="Thêm"></td>
+                    </tr>
+                </table>
+            </form>
+        </div>
+
+    <footer class="page-footer font-small special-color-dark pt-4">
+    <!-- Footer Elements -->
+        <!-- Footer Elements -->
+        <!-- Copyright -->
+        <div class="footer-copyright text-center py-3">© 2020 Copyright: Minh Nhật & Lê Cao</div>
+    <!-- Copyright -->
+    </footer>
+<!-- Footer -->
+</div>
+</body>
+</html>

@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" type="text/css" href="../css/style.css">
+    <title>Signup</title>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" integrity="sha384-JcKb8q3iqJ61gNV9KGb8thSsNjpSL0n8PARn9HuZOnIxN0hoP+VmmDGMN5t9UJ0Z" crossorigin="anonymous">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.5.0/jquery.min.js" integrity="sha256-xNzN2a4ltkB44Mc/Jz3pT4iU1cmeR0FkXs4pru/JxaQ=" crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js" integrity="sha384-B4gt1jrGC7Jh4AgTPSdUtOBvfO8shuf57BaghqFfPlYxofvL8/KUEfYiJOMMV+rV" crossorigin="anonymous"></script>
+</head>
+<body>
+  <div class="header">
+    <nav class="navbar navbar-expand-md navbar-light bg-light sticky-top">
+      <div class="container-fluid p-4">
+        <a class="navbar-branch" href="index.html">
+          <h1>BOOKS</h1>
+        </a>
+        <button class="navbar-toggler" type="button" data-toggle="collapse" 
+        data-target="#navbarResponsive">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarResponsive">
+          <ul class="navbar-nav ml-auto">
+            <li class="nav-item">
+              <a class="nav-link active" href="index.html">HOME</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="products.html">PRODUCTS</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="login.html">LOG IN</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="signup.html">SIGN UP</a>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </nav>
+  </div>
+  <div class="main">
+    <form action="" method="POST" class="form" id="form-1">
+      <h3 class="heading">SIGN UP</h3>
+      <div class="spacer"></div>
+  
+      <div class="form-group">
+        <label for="fullname" class="form-label">Full name</label>
+        <input id="fullname" name="fullname" type="text" placeholder="ex: Lê Văn Cao" class="form-control">
+        <span class="form-message"></span>
+      </div>
+  
+      <div class="form-group">
+        <label for="email" class="form-label">Email</label>
+        <input id="email" name="email" type="email" placeholder="ex: email@gmail.com" class="form-control">
+        <span class="form-message"></span>
+      </div>
+  
+      <div class="form-group">
+        <label for="password" class="form-label">Password</label>
+        <input id="password" name="password" type="password" placeholder="Enter password" class="form-control">
+        <span class="form-message"></span>
+      </div>
+  
+      <div class="form-group">
+        <label for="password_confirmation" class="form-label">Confirm Password</label>
+        <input id="password_confirmation" name="password_confirmation" placeholder="Confirm Password" type="password" class="form-control">
+        <span class="form-message"></span>
+      </div>
+  
+      <button class="form-submit">Sign up</button>
+    </form>
+  </div>
+  <script src="/js/signup.js"></script>
+  <script>
+    signup({
+      form: '#form-1',
+      formGroupSelector: '.form-group',
+      errorSelector: '.form-message',
+      rules: [
+        signup.isRequired('#fullname', 'Please enter your full name'),
+        signup.isEmail('#email', 'Please enter email'),
+        signup.minLength('#password', 6),
+        signup.isRequired('#password_confirmation'),
+        signup.isConfirmed('#password_confirmation', function(){
+          return document.querySelector('#form-1 #password').value;
+        }, 'The password is not correct')
+      ],
+      onSubmit: function (data){
+      //Call API
+        console.log(data);
+      }
+    });
+  </script>
+  <!-- Footer -->
+  <footer class="page-footer font-small special-color-dark pt-4">
+    <div class="footer-copyright text-center py-3">© 2020 Copyright: Minh Nhật & Lê Cao</div>
+  </footer>
+  <!-- Footer -->
+</body>
+</html>
